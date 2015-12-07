@@ -11,7 +11,7 @@ public abstract class CommandFactory{
 
       Properties prop = new Properties();
       try{
-         prop.load(CommandFactory.class.getClassLoader().getResourceAsStream("command.properties"));
+         prop.load(CommandFactory.class.getClassLoader().getResourceAsStream("commands.properties"));
          String name = prop.getProperty(key);
          Class c = Class.forName(name);
          command = (AbstractCommand)c.newInstance();
