@@ -30,29 +30,50 @@ public class OracleConnectionManager implements AbstractConnectionManager{
                 InitialContext init = new InitialContext();
                 DataSource source = (DataSource)init.lookup("java:comp/env/jdbc/onnnagokoro");
                 connection = source.getConnection();
-                connection.setAutoCommit(false);
             }catch(NamingException e){
                 e.printStackTrace();
             }catch(SQLException e){
                 e.printStackTrace();
             }
         }
+        return connection;
     }
 
     public void closeConnection(){
-
+        try{
+            if(connection != null){
+                connection.close();
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
     public void beginTransaction(){
-
+        if(connection == null){
+            getConnection();
+        }
+        try{
+            connection.setAutoCommit(false);
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
     public void commit(){
-
+        try{
+            connection.commit();
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
     public void rollback(){
-        
+        try{
+            connection.rollback();
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
     }
 
 }

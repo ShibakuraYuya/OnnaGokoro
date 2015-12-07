@@ -19,7 +19,7 @@ public class WebApplicationController implements ApplicationController{
    }
 
    public ResponseContext handleRequest(RequestContext reqc){
-      AbstractCommand command = CommandFactory2.getCommand(reqc);
+      AbstractCommand command = Factory.getCommand(reqc);
       command.init(reqc);
 
       ResponseContext resc = command.execute(new WebResponseContext());

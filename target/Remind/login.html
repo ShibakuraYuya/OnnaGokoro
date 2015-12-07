@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="components/loader.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div data-role="page">
+        <!-- メインコンテンツ -->
+        <div class="ui-content" role="main">
+            <div style="text-align:center;"><img id="top-img" src="images/main_01.jpg" alt="トップ画像が入る場所"></div>
+            <!-- 新規登録フォーム -->
+            <div style="text-align:center;"><h3>IDを取得（無料）</h3></div>
+            
+            <form action="">
+                <div></div>
+            </form>
+            <!-- ログインフォーム -->
+            <form action="">
+                <label for="#user-name">ID</label>
+                <input id="user-name" type="text" placeholder="IDを入力してください">
+                <label for="#password">パスワード</label>
+                <input id="password" type="password" placeholder="パスワードを入力してください">
+                <button data-role="button" type="submit">ログイン</button>
+            </form>
+        </div><!-- end main -->
+            <!-- スライドメニュー左 -->
+            <div data-role="panel" id="leftpanel" data-position="left" data-display="overlay" data-theme="a" data-position-fixed="true">
+                <ul data-role="listview" data-icon="false">
+                    <li><a href="login.html" >ログイン</a></li>
+                    <li><a href="index.html">トップページ</a></li>
+                	<li><a href="#">オススメ</a></li>
+                	<li><a href="#">純粋な恋</a></li>
+                	<li><a href="#">ワンナイトラブ/火遊び</a></li>
+                	<li><a href="#">失恋/かなしい片思い</a></li>
+                	<li><a href="#">幸せ/満足</a></li>
+                	<li><a href="#">浮気/不倫</a></li>
+                	<li><a href="#">笑える話</a></li>
+                	<li><a href="#">人気タグ</a></li>
+                	<li><a href="#">あなたのオンナゴコロを公開</a></li>
+                </ul>
+            </div>
+            <!-- スライドメニュー右 -->
+            <div data-role="popup" id="rightpanel" style="padding:10px 20px;" data-position="right" data-display="overlay">
+                <form action="#">
+                    <div data-role="fieldcontain">
+                        <input type="search" name="search" placeholder="キーワード">
+                        <button type="submit">検索</button>
+                    </div>
+                </form>
+                <label for="#popularTag" style="text-align:center">人気タグ</label>
+                <ul id="popularTag">
+                    <li>テスト</li>
+                	<li>テスト</li>
+                	<li>テスト</li>
+                </ul>
+            </div>
+    </div><!-- end page -->
+</body>
+</html>

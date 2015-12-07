@@ -1,0 +1,14 @@
+dao\OracleDaoFactory.class
+factory\Factory.class
+dao\AbstractConnectionManager.class
+dao\OracleUsersDao.class
+context\WebRequestContext.class
+context\WebResponseContext.class
+controller\WebApplicationController.class
+context\RequestContext.class
+command\AbstractCommand.class
+context\ResponseContext.class
+dao\OracleConnectionManager.class
+dao\AbstractUsersDao.class
+FrontServlet.class
+controller\ApplicationController.class
