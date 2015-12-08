@@ -47,7 +47,7 @@
    </dependencies>
 
    <build>
-     <finalName>Remind</finalName>
+     <finalName>OnnaGokoro</finalName>
      <pluginManagement>
       <plugins>
          <plugin>

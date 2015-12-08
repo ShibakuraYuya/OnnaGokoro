@@ -1,0 +1,15 @@
+p.resizeimage img {
+    margin-left:5%;
+    margin-top:80px;
+    width: 90%;
+    height:40%; }
+.button{
+
+    height:auto;
+    margin-top: 15%;
+}
+.scroll_text{
+    text-align:center;
+    padding-left:20%;
+    padding-right:20%;
+}
