@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>jQuery Mobile</title>
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js">
+</script>
+</head>
+<body>
+
+<!--初期アクセスで表示されるページ-->
+<div id="home" data-role="page">
+  <div data-id="common_header" data-role="header" data-theme="b" data-position="fixed" data-fullscreen="true">
+     <a href="index.html" class="ui-btn ui-btn-a ui-btn-left">Home</a>
+    <h1>jQuery Mobile TIPS</h1>
+     <a href="help.htmll" class="ui-btn ui-btn-a ui-btn-right">About</a>
+  </div>
+  <div role="main" class="ui-content">
+  <a href="#sub" data-role="button">サブ画面へ</a>
+  </div>
+  <div data-role="footer">
+    <h3>Copyright YUYA.SSHIBAKURA</h3>
+  </div>
+</div>
+
+<!--ボタン・クリックで表示されるページ-->
+<div id="sub" data-role="page">
+	<div data-id="common_header" data-role="header" data-theme="b" data-position="fixed" data-fullscreen="true">
+	<a href="index.html" class="ui-btn ui-btn-a ui-btn-left">Home</a>
+	<h1>jQuery Mobile TIPS</h1>
+	<a href="help.htmll" class="ui-btn ui-btn-a ui-btn-right">About</a>
+</div>
+<div role="main" class="ui-content">
+	<a href="Pure.html" class="ui-btn" data-prefetch>ログインせずに利用</a>
+</div>
+<div data-role="footer">
+	<h3>Copyright 1998-2014, YAMADA.Yoshihiro</h3>
+	</div>
+</div>
+
+</body>
+</html>
