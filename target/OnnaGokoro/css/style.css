@@ -2,14 +2,137 @@ p.resizeimage img {
     margin-left:5%;
     margin-top:80px;
     width: 90%;
-    height:40%; }
+    height:40%;
+}
 .button{
-
     height:auto;
     margin-top: 15%;
+    margin-bottom: 10%;
 }
 .scroll_text{
+    display: block;
     text-align:center;
-    padding-left:20%;
-    padding-right:20%;
+    height:auto;
+    margin-left:25%;
+    margin-right:25%;
+    padding: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #F5F5F5;
+}
+#righttext_pure{
+    position: absolute;
+    top:27%;
+    right:55%;
+    float: left;
+    width:37%;
+    height:15%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#lefttext_pure{
+    float: left;
+    width:40%;
+    height:20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position:absolute;
+    top:27%;
+    right:7%;
+}
+
+#book{
+    width:100%;
+    height:50%;
+}
+#righttext_OneNight_love{
+    width:80%;
+    border: double 10px #000000;
+
+}
+#leftttext_OneNight_love{
+    width:80%;
+    border:double 10px #0000ff;
+    margin-left: 20%;
+}
+#HBText{
+    right:28%;
+    width:60%;
+    position:absolute;
+}
+    top:60%;
+body{
+    font-size: 100%
+}
+#sad_image{
+    position:absolute;
+    top:60%;
+    right:1%;
+}
+#hukidashi{
+    margin-bottom: 60px;
+}
+#aroud_article{
+    background-image: url("../img/happy.jpg");
+    width:90%;
+    margin-left:5%;
+}
+#HAPText{
+    width:70%;
+    padding-right:
+    padding: 15%
+
+}
+#hap_image{
+    float:left;
+    margin-bottom: 30px;
+}
+
+#righttext_cheating{
+    background-color:#F5F5F5;
+    margin-left: 4%;
+    float: left;
+    width:40%;
+    height:220px;
+}
+#tatenaga{
+    float: left;
+    height:220px;
+}
+#lefttext_cheating{
+    background-color:#F5F5F5;
+    float: left;
+    width:40%;
+    height:220px;
+}
+
+#funny_1{
+    margin-left: 10%;
+    float: left;
+}
+#funny_2{
+
+}
+#rightText_Funny{
+    margin:0px;
+    padding:0px;
+    margin-left:10%;
+    float:left;
+    width:40%;
+    background-color:#F5F5F5;
+    height:100%;
+}
+#leftText_Funny{
+    float:left;
+    width:40%;
+    height:100%;
+    background-color:#F5F5F5;
+    margin-bottom:80px;
+
+}
+
+#footer{
+    width:100%;
+    height:30%;
+    background-color: #C0C0C0;
 }
