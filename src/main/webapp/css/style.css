@@ -1,0 +1,189 @@
+p.resizeimage img {
+    margin-left:5%;
+    margin-top:80px;
+    width: 90%;
+    height:40%;
+}
+.button{
+    height:auto;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+.scroll_text{
+    display: block;
+    text-align:center;
+    height:auto;
+    margin-left:25%;
+    margin-right:25%;
+    padding:3%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #F5F5F5;
+}
+#righttext_pure{
+    position: absolute;
+    top:1000px;
+    right:55%;
+    float: left;
+    width:37%;
+    height:auto;%;
+    overflow: hidden;
+    background-color:#F5F5F5;
+    padding-top:10%;
+    padding-bottom:11%;
+    padding-right:0%;
+    padding-left:0%;
+}
+#lefttext_pure{
+    float: left;
+    width:40%;
+    height:auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position:absolute;
+    top:1000px;
+    right:7%;
+    background-color:#F5F5F5;
+    padding-top:10%;
+    padding-bottom:11%;
+    padding-right:0%;
+    padding-left:0%;
+}
+
+#book{
+    width:100%;
+    height:50%;
+}
+#righttext_OneNight_love{
+    width:80%;
+    border: solid 1px #000000;
+
+    margin-left: 20%;
+    padding:5%;
+    background-color:#F5F5F5;
+
+}
+#leftttext_OneNight_love{
+    width:80%;
+    border: solid 1px #000000;
+    padding:5%;
+    background-color:#F5F5F5;
+}
+#banar{
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 5%;
+    margin-bottom:5%;
+}
+#HBText{
+    margin-left: 5%;
+    width:60%;
+    position:absolute;
+    top:2200px;
+    left:4%;
+}
+
+body{
+    font-size: 100%
+}
+#sad_image{
+    position:absolute;
+    top:2300px;
+    right:1%;
+    margin-bottom:10%;
+}
+#hukidashi{
+    margin-bottom: 60px;
+}
+#aroud_article{
+    background-image: url("../img/happy.jpg");
+    width:90%;
+    margin-left:5%;
+}
+#HAPPY{
+    height:20%;
+}
+#HAPText_p{
+    padding-right: :7%;
+    padding-left: :10%;
+    padding-top: :1%;
+    padding-bottom: :1%;
+    margin-left: 20%;
+    width:70%;
+    background-color:#F5F5F5;
+    height:160px;
+}
+#HAPText{
+    padding-right: 9%;
+    padding-top: 50px;
+    text-align: center;
+    height:250px;
+}
+#hap_image{
+    margin-bottom: 30px;
+}
+
+#righttext_cheating{
+    background-color:#F5F5F5;
+    margin-left: 4%;
+    float: left;
+    width:40%;
+    height:220px;
+}
+#tatenaga{
+    float: left;
+    height:220px;
+}
+#lefttext_cheating{
+    background-color:#F5F5F5;
+    float: left;
+    width:40%;
+    height:220px;
+}
+
+.fb-page{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#funny_1{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#rightText_Funny{
+
+    position: absolute;
+    top:90.00%;
+    left:50%;
+    width:45%;
+    background-color:#F5F5F5;
+    height:4.9%;
+}
+#leftText_Funny{
+    position: absolute;
+    top:86.02%;
+    left: 5%;
+    width:45%;
+    height:4.65%;
+    background-color:#F5F5F5;
+
+
+}
+
+#footer{
+    width:100%;
+    height:30%;
+    background-color: #C0C0C0;
+}
+.sample {
+    width:200px;
+    font-size:24px;
+    font-weight:bold;
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:8px 0 10px;
+    color:#333;
+    border:1px solid #333;
+}

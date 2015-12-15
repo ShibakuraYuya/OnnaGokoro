@@ -1,196 +1,265 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="components/loader.css">
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="components/loader.js"></script>
-    <script src="js/ncmb-2.0.0.min.js"></script>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/app.js"></script>
-</head>
-<body>
-    <!-- 共通ヘッダ-->
-    <div data-role="header" data-theme="a" data-position="fixed">
-        <a href="#leftpanel" data-role="button" class="ui-btn ui-btn-inline ui-icon-bars ui-btn-icon-notext"></a>
-        <h1>オンナゴコロ</h1>
-        <a href="#rightpanel" data-role="button" data-rel="popup" data-position-to="#top-img" class="ui-btn ui-btn-inline ui-icon-search ui-btn-icon-notext"></a>
-    </div>
-    <!-- 共通フッタ -->
-    <div data-role="footer" data-theme="a"></div>
+<!DOCTYPE html>
+<html lang="ja-JP">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta charset="UTF-8" />
 
-    <div data-role="page">
-        <!-- メインコンテンツ -->
-        <div role="main" class="ui-content">
-            <!-- TOP画像 -->
-            <div style="text-align:center;"><img id="top-img" src="images/main_01.jpg" alt="�g�b�v�摜�������ꏊ"></div>
 
-            <!-- スライド -->
-            <div class="flexslider" style="margin-top:5px;">
-                <ul class="slides">
-                    <li><img src="images/main_01.jpg" alt=""></li>
-                    <li>テスト</li>
-                    <li><img src="images/IMG3.jpg" alt=""></li>
-                    <li><img src="images/IMG4.jpg" alt=""></li>
-                </ul>
+		<title>オンナゴコロ♡</title>
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+
+		<!--[if lt IE 9]>
+			<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+        <script>window.twttr = (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+              if (d.getElementById(id)) return t;
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js, fjs);
+
+              t._e = [];
+              t.ready = function(f) {
+                t._e.push(f);
+              };
+                return t;
+            }(document, "script", "twitter-wjs"));
+        </script>
+	</head>
+
+	<body role="document">
+    <div id="fb-root"></div>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=959119404155097";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="Pure.html">オンナゴコロ</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="Login.html">Login</a></li>
+						<li><a href="Index.html">Top</a></li>
+						<li><a href="Recomend.html">Recomend</a></li>
+						<li><a href="Pure.html">Pure</a></li>
+						<li><a href="OneNightLove.html">OneNightLove</a></li>
+						<li><a href="HeartBreak.html">HeartBreak</a></li>
+						<li><a href="Happy.html">Happy</a></li>
+						<li><a href="Cheating.html">Cheating</a></li>
+						<li><a href="Funny.html">Funny</a></li>
+						<li><a href="HotKeyWord.html">HotKeyword</a></li>
+						<li><a href="Form.html">あなたのオンナゴコロを公開</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+        <p class="resizeimage">
+           <img src="img/Recommend.jpg">
+		</p>
+
+
+<div class="mySlider1">
+	<div id="mySlider1-target" class="carousel slide" data-ride="carousel">
+		<!-- ページャー部分 -->
+		<ol class="carousel-indicators">
+			<li data-target="#mySlider1-target" data-slide-to="0"></li>
+			<li data-target="#mySlider1-target" data-slide-to="1" class="active"></li>
+			<li data-target="#mySlider1-target" data-slide-to="2"></li>
+		</ol>
+		<!-- 画像部分 -->
+		<div class="carousel-inner" role="listbox">
+			<div class="item">
+			<p class="scroll_text" text-align="center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+				when an unknown printer took a galley of type……</p>
+			<div class="carousel-caption">
+
+			</div>
+		</div>
+		<div class="item active">
+			<p class="scroll_text">Contrary to popular belief, Lorem Ipsum is not simply random text.
+			It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+			Richard McClintock, a Latin professor……</p>
+			<div class="carousel-caption">
+			</div>
+		</div>
+		<div class="item">
+			<p class="scroll_text">There are many variations of passages of Lorem Ipsum available,
+			but the majority have suffered alteration in some form, by injected humour,
+			or randomised words which don't look……</p>
+			<div class="carousel-caption">
+		</div>
+	</div>
+</div>
+
+  <!-- 左右移動コントローラー部分 -->
+<a class="left carousel-control" href="#mySlider1-target" role="button" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	<span class="sr-only">Previous</span>
+</a>
+	<a class="right carousel-control" href="#mySlider1-target" role="button" data-slide="next">
+	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	<span class="sr-only">Next</span>
+</a>
+</div>
+</div>
+	<a href="Recommend.html"><p class="button" text align="center"><img src="img/Recommend.png"></p></a>
+    <p class="resizeimage">
+       <img src="img/pure.jpg">
+    </p>
+        <div id="pure">
+            <img id="book" src="img/a.jpg">
+            <div id="righttext_pure">
+                <p>"But I must explain to you how all this mistaken idea of
+                    denouncing pleasure and praising pain was born and I will give you a complete ……</p>
             </div>
-
-            <!-- RECOMMEND-->
-            <div style="text-align: center"><a href="#">&gt;VIEW MORE RECCOMEND</a></div>
-
-            <!--  -->
-            <div style="text-align:center; margin-top:5px; margin-bottom:5px;"><img id="top-img" src="*"></div>
-
-            <!-- PURE -->
-            <div style="text-align: center">
-        		<div id="back">
-        			<div id="right-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo repellat laborum pariatur cumque dolore consequuntur provident culpa voluptatum nulla nesciunt nobis nisi debitis incidunt vero ab ex nihil doloribus.
-        				</article>
-        			</div>
-        			<div id="left-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos repellendus aliquam sequi rerum veniam sapiente eum recusandae sed iusto odit sit libero natus similique id atque est totam voluptas!
-        				</article>
-        			</div>
-        		</div>
+            <div id="lefttext_pure">
+                <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                Sections 1.10.32 and 1.10.33 from "de "……</p>
             </div>
+        </div>
+        <a href="Pure.html"><p class="button" text align="center"><img src="img/Pure.png"></p></a>
 
-            <!--  -->
-            <div style="text-align: center"><a href="#">&gt;VIEW MORE PURE</a></div>
+        <p class="resizeimage">
+           <img src="img/OneNightLove.jpg">
+        </p>
 
-            <!--  -->
-            <div style="text-align:center; margin-top:5px; margin-bottom:5px;"><img id="top-img" src="*"></div>
+        <div id="righttext_OneNight_love">
+            <p>luptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labo…</p>
+        </div>
+        <div id="leftttext_OneNight_love">
+            <p>luptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labo…</p>
+        </div>
 
-            <!-- ONE NIGHT LOVE -->
-            <div style="text-align: center">
-            	<div id="back">
-        			<div id="right-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo repellat laborum pariatur cumque dolore consequuntur provident culpa voluptatum nulla nesciunt nobis nisi debitis incidunt vero ab ex nihil doloribus.
-        				</article>
-        			</div>
-        			<div id="left-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos repellendus aliquam sequi rerum veniam sapiente eum recusandae sed iusto odit sit libero natus similique id atque est totam voluptas!
-        				</article>
-        			</div>
-        		</div>
+
+        <a href="OneNightLove.html"><p class="button" text align="center"><img src="img/OneNightLove.png"></p></a>
+
+		<img  id="banar" src="img/banar.jpg" width="80%" height="auto">
+
+		<!--<a class="twitter-timeline"
+            data-widget-id="674135307533463552"
+            href="https://twitter.com/intent/user?user_id=440556282"
+            data-user-id="440556282">
+            Tweets by Twitter user 2857397298
+        </a>-->
+
+        <div id="HeartBreak">
+            <img id="hukidashi" src="img/hukidashi.png">
+            <div id="HBText">
+                <p>Lorem ipsum dolor sit amet, aliquam conceptam eu eam, usu ei dicunt feugiat, an eos probatus menandri intellegam.
+                Mea no facilis commune, nec interesset cotidieque in. Ei eam tollit ponderum…</p>
             </div>
-
-            <!-- ONENIGHTLOVE -->
-            <div style="text-align: center"><a href="#">&gt;VIEW MORE ONE NIGHT LOVE</a></div>
-
-            <!-- -->
-            <div style="text-align:center; margin-top:5px; margin-bottom:5px;"><img id="top-img" src="*"></div>
-
-            <!-- Heart Break -->
-            <div style="text-align:center; margin-top:10px; margin-bottom:5px;"><img id="top-img" src="*"></div>
-
-            <!-- HEART BREAK -->
-            <div style="text-align: center">
-                <div id="back">
-        			<div id="right-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo repellat laborum pariatur cumque dolore consequuntur provident culpa voluptatum nulla nesciunt nobis nisi debitis incidunt vero ab ex nihil doloribus.
-        				</article>
-        			</div>
-        			<div id="left-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos repellendus aliquam sequi rerum veniam sapiente eum recusandae sed iusto odit sit libero natus similique id atque est totam voluptas!
-        				</article>
-        			</div>
-        		</div>
+            <img id="sad_image" src="img/sad.png" width="30%" height="auto">
+            <a href="HeartBreak.html"><p class="button" text align="center"><img src="img/HeartBreak.png"></p></a>
+        </div>
+        <div id="HAPPY">
+            <p class="resizeimage">
+               <img  id="hap_image" src="img/happy.jpg">
+            </p>
+            <div id="aroud_article">
+                <div id="HAPText">
+                    <p id="HAPText_p">Dolorum feugait vis id, ei dicunt voluptatum temporibus vel, id definiebas reprimique sea.
+                     Pericula conclusionemque id mei, qui at mandamus urbanitas. Eu dicta abhorreant percipitur usu.</p>
+                </div>
             </div>
+            <a href="Happy.html"><p class="button" text align="center"><img src="img/Happy.png"></p></a>
+        </div>
 
-            <!-- HAPPY -->
-            <div style="text-align: center"><a href="#">&gt;VIEW MORE HAPPY</a></div>
+        <div id="Cheating" height="50px">
+            <p class="resizeimage">
+               <img  id="hap_image" src="img/agree.jpg">
+		   </p>
+                <p id="righttext_cheating" height="auto">
+                    Lorem ipsum is a pseudo-Latin text used in web design, typography, layout,
+                    and printing in place of English to emphasise design elements over content.
+                    It's also called……
+                </p>
+                <img id="tatenaga" src="img/tatenaga.jpg" width="12%" height="8%">
+                <p id="lefttext_cheating">
+                    Lorem ipsum is mostly a part of a Latin text by the classical author and philosopher Cicero.
+                    Its words and letters have been changed by addition or removal, so to deliberately render its
+                    content……
+                </p>
+        </div>
 
-            <!-- -->
-            <div style="text-align:center; margin-top:5px; margin-bottom:5px;"><img id="top-img" src="*"></div>
+		<div class="fb-page" data-href="https://www.facebook.com/facebook" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/facebook"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div></div>
+		<div id="funny" height="auto">
+			<p class="resizeimage">
+				<img  id="fun_image" src="img/funny-image.jpg">
+			</p>
+			<p id="leftText_Funny">
+				ORICON STYLEは、毎年恒例の『第12回 好きな女性アナウンサーランキング』を今年も発表。
+				12度目の調査となる今回、見事首位に選ばれたのは、情報番海『ヒルナンデス！』、
+				『有吉ゼミ』ORICON STYLEは、毎年恒例のORICON STYLEはORICON……
+			</p>
 
-            <!-- CHEATING-->
-            <div style="text-align:center; margin-top:5px; margin-bottom:5px;"><img id="top-img" src="*"></div>
+			<p id="rightText_Funny">
+				仙台市地下鉄東西線の開業後初の平日となった7日の推計利用者について、
+				市交通局は8日、約4万9400人と発表した。通勤通学の利用が本格化したが、
+				1日8万人とした市の需要予測を約38％下回った下回った下回った下回った……
+			</p>
+			<img id="funny_1" src="img/funny_1.jpg" width="90%" height="auto">
 
-            <!-- CHEATING-->
-            <div style="text-align: center">
-                <div id="back">
-        			<div id="right-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo repellat laborum pariatur cumque dolore consequuntur provident culpa voluptatum nulla nesciunt nobis nisi debitis incidunt vero ab ex nihil doloribus.
-        				</article>
-        			</div>
-        			<div id="left-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos repellendus aliquam sequi rerum veniam sapiente eum recusandae sed iusto odit sit libero natus similique id atque est totam voluptas!
-        				</article>
-        			</div>
-        		</div>
-            </div>
 
-            <!-- CHEATING�J�e�S���ւ̃����N -->
-            <div style="text-align: center"><a href="#">&gt;VIEW MORE CHEATING</a></div>
+		</div>
 
-            <!-- Funny�摜 -->
-            <div style="text-align:center; margin-top:5px; margin-bottom:5px;"><img id="top-img" src="*"></div>
 
-            <!-- Funny�J�e�S���L�� -->
-            <div style="text-align: center">
-                <div id="back">
-            		<div id="right-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni illo repellat laborum pariatur cumque dolore consequuntur provident culpa voluptatum nulla nesciunt nobis nisi debitis incidunt vero ab ex nihil doloribus.
-        				</article>
-        			</div>
-        			<div id="left-text">
-        				<article>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea eos repellendus aliquam sequi rerum veniam sapiente eum recusandae sed iusto odit sit libero natus similique id atque est totam voluptas!
-        				</article>
-        			</div>
-        		</div>
-            </div>
+		<a href="Funny.html"><p class="button" text align="center"><img src="img/Funny.png"></p></a>
+		<div id="footer">
+			<div class="list-group">
+				<div class="container-fluid">
+					<div class="row sampleRow">
+						<div class="col-xs-6">
+							<a class="list-group-item" href="#">概要</a>
+							<a class="list-group-item active" href="#">メニューＢ</a>
+							<a class="list-group-item" href="#">メニューＣ</a>
+						</div>
+						<div class="col-xs-6">
+							<a class="list-group-item" href="#">メニューＡ</a>
+							<a class="list-group-item active" href="#">メニューＢ</a>
+							<a class="list-group-item" href="#">メニューＣ</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <!-- Funny -->
-            <div style="text-align: center"><a href="#">&gt;VIEW MORE FUNNY</a></div>
-        </div><!-- end ui-contens -->
+		</div>
 
-            <!-- 左メニュー -->
-            <div data-role="panel" id="leftpanel" data-position="left" data-display="overlay" data-theme="a" data-position-fixed="true">
-                <ul data-role="listview" data-icon="false">
-                    <li><a href="login.html" >LOGIN　ログイン</a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                	<li><a href="#"></a></li>
-                </ul>
-            </div>
-            <!-- -->
-            <div data-role="popup" id="rightpanel" style="padding:10px 20px;" data-position="right" data-display="overlay">
-                <form action="#">
-                    <div data-role="fieldcontain">
-                        <input type="search" name="search" placeholder="�L�[���[�h">
-                        <button type="submit">検索する</button>
-                    </div>
-                </form>
-                <label for="#popularTag" style="text-align:center">タグ</label>
-                <ul id="popularTag">
-                    <li>・テスト</li>
-                	<li>テスト</li>
-                	<li>テスト</li>
-                </ul>
-            </div>
-    </div><!--end page-->
-</body>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="js/bootstrapSlideInMenu-1.0.0.min.js"></script>
+		<script>
+		$(document).ready(function() {
+			$(document).SlideInMenu();
+		});
+		</script>
+	</body>
 </html>
