@@ -5,7 +5,7 @@
   <groupId>org</groupId>
   <artifactId>OnnaGokoro</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
 
   <name>OnnaGokoro</name>
   <url>http://maven.apache.org</url>
