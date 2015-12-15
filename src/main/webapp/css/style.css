@@ -187,3 +187,10 @@ body{
     color:#333;
     border:1px solid #333;
 }
+#logbutton{
+	margin-left:6%;
+}
+#facebooklog{
+	width:80%;
+	height:200px;
+}

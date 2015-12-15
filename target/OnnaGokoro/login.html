@@ -1,88 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja-JP">
 	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>jQuery Mobile</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		js.src = "//connect.facebook.net/en_US/sdk/debug.js";
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script>
-			$(function(){
-			$('#hamburger-botton').click(function(){
-			$(this).toggleClass('action');
-			});
-			});
-		</script>
-	</head>
-	<body>
-		<!--初期アクセスで表示されるページ-->
-		<div id="home" data-role="page">
-			<div data-id="common_header" data-role="header" data-theme="b" data-position="fixed">
-				<a href="index.html" class="ui-btn ui-btn-a ui-btn-left">Home</a>
-				<h1>オンナゴコロ</h1>
-				<a href="help.htmll" class="ui-btn ui-btn-a ui-btn-right">About</a>
-				<div class="wrapper" >
-					<div id="hamburger-botton" text-align:right>
-					</div>
-				</div>
-			</div>
 
-			<div id="img">
-				<img src="img/main_02.jpg" width="100%">
-			</div>
-			 <div id="popup" data-role="popup">
-				<p>jQuery Mobileは、Android、iOS、主要なデスクトップブラウザーなど、代表的な環境に対応したモバイルアプリ開発のためのライブラリです。jQueryとの親和性に優れ、ウィジェットが豊富に用意されているのが特徴です。</p>
-			</div>
-			<p>JavaScriptでスマホアプリを開発する際に定番ともいえるライブラリ、それが<a href="#popup" data-rel="popup" data-position-to="window"  data-overlay-theme="b">jQuery Mobile</a>です。</p>
-			<!--facebook login-->
-
-
-
-		  		<a href="index.html" class="ui-btn">ログイン</a>
-				<input type="button" value="新規登録" />
-			</div>
-				<div role="main" class="ui-content">
-		  			<a href="#sub" data-role="button">ログインせずに利用する</a>
-				</div>
-				<div data-role="footer">
-					<div data-role="navbar">
-						<ul>
-							<li><a href="#" class="ui-btn-active">ホーム</a></li>
-							<li><a href="#">設定</a></li>
-						</ul>
-						<ul>
-							<li><a href="#">ヘルプ</a></li>
-							<li><a href="#">問い合わせ</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<!--ボタン・クリックで表示されるページ-->
-			<div id="sub" data-role="page">
-				<div data-id="common_header" data-role="header" data-theme="b" data-position="fixed" data-fullscreen="true">
-				<a href="index.html" class="ui-btn ui-btn-a ui-btn-left">Home</a>
-				<h1>jQuery Mobile TIPS</h1>
-				<a href="help.htmll" class="ui-btn ui-btn-a ui-btn-right">About</a>
-			</div>
-			<div role="main" class="ui-content">
-				<a href="Pure.html" class="ui-btn" data-prefetch>スーカップ</a>
-			</div>
-			<div data-role="footer">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#" class="ui-btn-active">ホーム</a></li>
-						<li><a href="#">設定</a></li>
-						<li><a href="#">ヘルプ</a></li>
-						<li><a href="#">問い合わせ</a></li>
-					</ul>
-				</div>
-			</div>
+		<title>オンナゴコロ♡</title>
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="css/bootstrap.css">
+	<head>
+	<body>	
+		<div class="jumbotron">
+			<h1>ジャンボトロン</h1>
+			<p>WEBサイトにおける主要コンテンツを紹介するのに適したスタイル。</p>
+			<p><a class="btn btn-primary btn-lg" href="./jumbotron.html" role="button">もっと詳しく</a></p>
 		</div>
+		<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8">
+			<a href="#" class="sample">Button</a>
+			<a href="#" class="sample">Button</a>
+		</div>
+		<div class="col-xs-2"></div>
+	</div>
+</div>
 	</body>
 </html>
